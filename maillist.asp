@@ -65,7 +65,7 @@ set objSendMail = NOTHING
 <html>
 <head>
 <meta http-equiv="Content-Language" content="tr">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="genel.css">
 </head>
 

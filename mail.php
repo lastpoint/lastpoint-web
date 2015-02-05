@@ -15,7 +15,7 @@ mail($email, $subject, $message, $headers);
 <html>
 <head>
 <title>Mesajınız Gönderildi</title>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+<meta charset="UTF-8">
 </head>
 
 <body>
