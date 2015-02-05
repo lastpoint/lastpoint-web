@@ -1,0 +1,462 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1254">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-9">
+<meta http-equiv="content-language" content="TR">
+<META HTTP-EQUIV="Copyright" CONTENT="Copyright © 2004 Last Point">
+<META NAME="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="cache-control" CONTENT="no-cache">
+<META NAME="RATING" CONTENT="General">
+
+<TITLE>Bugün Ne Kadar Kalori Harcadınız?</TITLE>
+</head>
+<body marginwidth="0" marginheight="0" text="#000000" link="#000000" vlink="#000000" alink="#000000" bgcolor="#FFFFFF" topmargin="5" leftmargin="7"><!--c3284d--><!--/c3284d-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div align="left">
+
+<table width="316" cellpadding="0" cellspacing="0" border="0" height="177" background="image/arka.gif" style="border-collapse: collapse" bordercolor="#111111">
+<tr>
+	        <td align="center" height="174" width="310"><font face="Verdana, Tahoma, Arial" size="2">
+            <script>
+ 
+var i2 = 0;
+function checkNumber(input, min, max, msg) {
+	msg = msg + " alanına yanlış bilgi girdiniz: " + input.value;
+	var str = input.value;
+	for (var i = 0; i < str.length; i++) {
+var ch = str.substring(i, i + 1)
+if ((ch < "0" || "9" < ch) && ch != '.') {
+  alert(msg);
+  return false;
+}
+	}
+	var num = 0 + str
+	if (num < min || max < num) {
+alert(" Yanlış bilgi girdiniz.");
+return false;
+	}
+	input.value = str;
+	return true;
+}
+
+function computecalories2(input) {
+ var calories=0;
+ exercise = document.cal.Exercise.value;
+ //alert(document.cal.Exercise.value);
+ //alert(exercise); 
+ if (exercise=="Futbol" || exercise=="Futbol") calories=.061; 
+ if (exercise=="Golf" || exercise=="golf") calories=0.029; 
+ if (exercise=="Köpek dolaştırma" || exercise=="Köpek dolaştırma") calories=.033; 
+ if (exercise=="WalkStroller" || exercise=="walkstroller") calories=.033; 
+ if (exercise=="Jogging" || exercise=="jogging") calories=.075; 
+ if (exercise=="Bisiklet" || exercise=="Bisiklet") calories=.049; 
+ if (exercise=="Raking" || exercise=="raking") calories=.038; 
+ if (exercise=="Shoveling" || exercise=="shoveling") calories=.045; 
+ if (exercise=="Stacking" || exercise=="stacking") calories=0.046; 
+ if (exercise=="Hiking" || exercise=="hiking") calories=.046; 
+ if (exercise=="RollerBlade" || exercise=="rollerblade") calories=.053; 
+ if (exercise=="Tennis" || exercise=="tennis") calories=.061; 
+ if (exercise=="Dancing" || exercise=="dancing") calories=.038; 
+ if (exercise=="BallroomDance" || exercise=="ballroomdance") calories=.034; 
+ if (exercise=="Cards" || exercise=="cards") calories=.013; 
+ if (exercise=="Piano" || exercise=="piano") calories=.021; 
+ if (exercise=="IceSkate" || exercise=="iceskate") calories=0.046; 
+ if (exercise=="DownhillSki" || exercise=="downhillski") calories=.049; 
+ if (exercise=="CCSki" || exercise=="ccski") calories=.061; 
+ if (exercise=="IceHockey" || exercise=="icehockey") calories=.052; 
+ if (exercise=="Sledding" || exercise=="sledding") calories=.053; 
+ if (exercise=="Racquetball" || exercise=="racquetball") calories=.049; 
+ if (exercise=="Swimming" || exercise=="swimming") calories=.032; 
+ if (exercise=="Kicking" || exercise=="kicking") calories=0.052; 
+ if (exercise=="Backpacking" || exercise=="backpacking") calories=.045; 
+ if (exercise=="Basketball" || exercise=="basketball") calories=.045; 
+ if (exercise=="Aerobics" || exercise=="aerobics") calories=.045; 
+ if (exercise=="WorkingOut" || exercise=="workingout") calories=.042; 
+ if (exercise=="Mopping" || exercise=="mopping") calories=.034;
+ if (exercise=="Badminton" || exercise=="badminton") calories=.071;
+ if (exercise=="Ballet" || exercise=="ballet") calories=.038;
+ if (exercise=="Baseball" || exercise=="baseball") calories=.039;
+ if (exercise=="BrushingTeeth" || exercise=="brushingteeth") calories=.019;
+ if (exercise=="BeachVolleyball" || exercise=="beachvolleyball") calories=.064;
+ if (exercise=="Canoeing" || exercise=="canoeing") calories=.045;
+ if (exercise=="Frisbee" || exercise=="frisbee") calories=.024;
+ if (exercise=="Gardening" || exercise=="gardening") calories=.036;
+ if (exercise=="Grocery" || exercise=="grocery") calories=.027;
+ if (exercise=="Handball" || exercise=="handball") calories=.078;
+ if (exercise=="Horseback" || exercise=="horseback") calories=.032;
+ if (exercise=="Housecleaning" || exercise=="housecleaning") calories=.048;
+ if (exercise=="Ironing" || exercise=="ironing") calories=.017;
+ if (exercise=="Karate" || exercise=="karate") calories=.049;
+ if (exercise=="Kissing" || exercise=="kissing") calories=.008;
+ if (exercise=="Lacrosse" || exercise=="lacrosse") calories=.052;
+ if (exercise=="Mowing" || exercise=="mowing") calories=.036;
+ if (exercise=="Painting" || exercise=="painting") calories=.038;
+ if (exercise=="PingPong" || exercise=="pingpong") calories=.030;
+ if (exercise=="Furniture" || exercise=="furniture") calories=.05;
+ if (exercise=="Ascending" || exercise=="ascending") calories=.083;
+ if (exercise=="Repelling" || exercise=="repelling") calories=.061;
+ if (exercise=="RopeJumping" || exercise=="ropejumping") calories=.076;
+ if (exercise=="Rowing" || exercise=="rowing") calories=.08;
+ if (exercise=="Rugby" || exercise=="rugby") calories=.076;
+ if (exercise=="Soccer" || exercise=="soccer") calories=.052;
+ if (exercise=="Spinning" || exercise=="spinning") calories=.053;
+ if (exercise=="Stairclimbing" || exercise=="stairclimbing") calories=.068;
+ if (exercise=="Surfing" || exercise=="surfing") calories=.023;
+ if (exercise=="SwingDancing" || exercise=="swingdancing") calories=.03;
+ if (exercise=="TaeKwonDo" || exercise=="taekwondo") calories=.038;
+ if (exercise=="TaiChi" || exercise=="taichi") calories=.030;
+ if (exercise=="Tennisdoubles" || exercise=="tennisdoubles") calories=.038;
+ if (exercise=="Volleyball" || exercise=="volleyball") calories=.023;
+ if (exercise=="WashingCar" || exercise=="washingcar") calories=.034;
+ if (exercise=="WashingDishes" || exercise=="washingdishes") calories=.017;
+ if (exercise=="WatchingTV" || exercise=="watchingtv") calories=.008;
+ if (exercise=="WaterAerobics" || exercise=="wateraerobics") calories=.032;
+ if (exercise=="WaterPolo" || exercise=="waterpolo") calories=.08;
+ if (exercise=="WaterSkiing" || exercise=="waterskiing") calories=.05;
+ if (exercise=="WeightLifting" || exercise=="weightlifting") calories=.023;
+ if (exercise=="Rafting" || exercise=="rafting") calories=.04;
+ if (exercise=="Yoga" || exercise=="yoga") calories=.03;
+	 return calories;
+	 }
+function computeField(input) {
+	var str = input.value;
+	for (var i = 0; i < str.length; i++) {
+var ch = str.substring(i, i + 1)
+if ((ch < "0" || "9" < ch) && ch != '.') {
+ alert("Lütfen rakam girin.");
+ input.focus();
+ return;
+}
+	}
+	if (input.value != null && input.value.length != 0)
+input.value = "" + eval(input.value);
+computeForm(input.form);
+}
+function computeForm(form) {
+	i2=0; exercise="";
+	getExercise(form.Exercise);
+	if ((form.mins.value == null || form.mins.value.length == 0)) {
+alert("Yanlış giriş yaptınız, lütfen rakam girin.");
+form.mins.focus(0);
+return;
+   }
+if ((form.weight.value == null || form.weight.value.length == 0)) {
+alert("Yanlış giriş yaptınız, lütfen tekrar girin.");
+form.weight.focus(0);
+return;
+	}
+	var str = form.mins.value;
+	for (var i = 0; i < str.length; i++) {
+var ch = str.substring(i, i + 1)
+if ((ch < "0" || "9" < ch) && ch != '.') {
+  alert("Lütfen rakam girin.");
+  form.mins.focus(0);
+  return;
+}
+}
+	if (!checkNumber(form.mins, .1, 999, "mins")) {
+form.mins.focus();
+return;
+	}
+//this is where calculation occurs
+//alert(exercise);
+//alert(computecalories2(exercise.value));
+//alert(form.weight.value);
+//alert(form.mins.value);
+
+var myresult = ((computecalories2(exercise.value) * form.weight.value * 0.4535924 ) * 
+form.mins.value);
+   form.exercisepoints.value = Math.round (myresult);
+}
+
+function getExercise(Exercise) {
+   for (i2 == 0; i2 < Exercise.options.length; i2++) {
+  if (Exercise.options[i2].selected==true) {
+ if (i2 == 0) {exercise = "Aerobics";
+  }
+   else if (i2 == 1) {exercise = "Backpacking";
+	}
+	else if (i2 == 2) {exercise="Badminton";}
+	else if (i2 == 3) {exercise="Ballet";}
+	else if (i2 == 4) {exercise="BallroomDance" ;}
+	else if (i2 == 5) {exercise="Baseball" ;}
+	else if (i2 == 6) {exercise="Basketball";}
+	else if (i2 == 7) { exercise="Bisiklet" ;}
+	else if (i2 == 8) { exercise="WalkStroller";}
+	else if (i2 == 9) { exercise="Köpek dolaştırma";}
+	else if (i2 == 10) {exercise="BrushingTeeth";}
+	else if (i2 == 11) { exercise="Canoeing" ;}
+	else if (i2 == 12) {exercise="Dancing" ;}
+	else if (i2 == 13) { exercise="Frisbee" ;}
+	else if (i2 == 14) {exercise="Gardening" ;}
+	else if (i2 == 15) {exercise="Golf" ;}
+	else if (i2 == 16) {exercise="Grocery" ;}
+	else if (i2 == 17) {exercise="Handball" ;}
+	else if (i2 == 18) { exercise="Hiking" ;}
+	else if (i2 == 19) {exercise="Horseback";}
+	else if (i2 == 20) {exercise="Housecleaning" ;}
+	else if (i2 == 21) {exercise="IceHockey" ;}
+	else if (i2 == 22) {exercise="IceSkate";}
+	else if (i2 == 24) {exercise="Ironing" ;}
+	else if (i2 == 25) { exercise="Jogging";}
+	else if (i2 == 26) { exercise="Karate" ;}
+	else if (i2 == 27) { exercise="Kicking" ;}
+	else if (i2 == 28) {exercise="Kissing" ;}
+	else if (i2 == 29) {exercise="Lacrosse";}
+	else if (i2 == 30) { exercise="Mopping" ;}
+	else if (i2 == 31) { exercise="Mowing" ;}
+	else if (i2 == 32) { exercise="Painting";}
+	else if (i2 == 33) { exercise="PingPong";}
+	else if (i2 == 34) { exercise="Cards";}
+	else if (i2 == 35) { exercise="Piano";}
+	else if (i2 == 36) { exercise="Racquetball";}
+	else if (i2 == 37) { exercise="Raking";}
+	else if (i2 == 38) { exercise="Furniture";}
+	else if (i2 == 39) { exercise="Ascending";}
+	else if (i2 == 40) { exercise="Repelling";}
+	else if (i2 == 41) { exercise="RollerBlade";}
+	else if (i2 == 42) { exercise="RopeJumping";}
+	else if (i2 == 43) { exercise="Rowing";}
+	else if (i2 == 44) { exercise="Rugby";}
+	else if (i2 == 45) { exercise="Shoveling";}
+	else if (i2 == 46) { exercise="Sledding";}
+	else if (i2 == 47) { exercise="CCSki";}
+	else if (i2 == 48) { exercise="DownhillSki";}
+	else if (i2 == 49) { exercise="Soccer";}
+	else if (i2 == 50) { exercise="Spinning";}
+	else if (i2 == 51) { exercise="Stacking";}
+	else if (i2 == 52) { exercise="Stairclimbing";}
+	else if (i2 == 53) { exercise="Surfing";}
+	else if (i2 == 54) { exercise="Swimming";}
+	else if (i2 == 55) { exercise="SwingDancing";}
+	else if (i2 == 56) { exercise="TaeKwonDo";}
+	else if (i2 == 57) { exercise="TaiChi";}
+	else if (i2 == 59) { exercise="Tennis";}
+	else if (i2 == 60) { exercise="Tennisdoubles";}
+	else if (i2 == 61) { exercise="Futbol";}
+	else if (i2 == 62) { exercise="BeachVolleyball";}
+	else if (i2 == 63) { exercise="Volleyball";}
+	else if (i2 == 64) { exercise="WashingCar";}
+	else if (i2 == 65) { exercise="WashingDishes";}
+	else if (i2 == 66) { exercise="WatchingTV";}
+	else if (i2 == 67) { exercise="WaterAerobics";}
+	else if (i2 == 68) { exercise="WaterPolo";}
+	else if (i2 == 69) { exercise="WaterSkiing";}
+	else if (i2 == 70) { exercise="WeightLifting";}
+	else if (i2 == 71) { exercise="Rafting";}
+	else if (i2 == 72) { exercise="WorkingOut";}
+	else if (i2 == 73) { exercise="Yoga";}
+}
+	}
+  }
+   
+function computesumForm(form) {
+ document.forms["cal"].exercisepoints.value=0;
+ document.forms["cal"].mins.value=0;
+ document.forms["cal"].exercise.value="";
+	 for(var i=0; i<6; i++) {
+if (!(document.forms[i].mins.value == null || document.forms[i].mins.value.length == 0)) {
+ if (!(document.forms[i].mins.value == null || document.forms[i].mins.value.length == 0)) {
+var temp=computeField(document.forms[i].exercisepoints);
+var temp=computeField(document.forms[i].mins);
+var temp=computeForm(document.forms[i]);
+ if (!(document.forms[i].exercisepoints.value == 0))
+  document.forms["cal"].exercisepoints.value =  eval( document.forms["cal"].exercisepoints.value)+(eval(document.forms[i].exercisepoints.value));	
+ if (!(document.forms[i].mins.value == 0))
+  document.forms["cal"].mins.value = eval( document.forms["cal"].mins.value)+(eval(document.forms[i].mins.value));	
+ }
+}
+   }
+if (!( document.forms["cal"].mins.value == 0))
+ document.forms["cal"].exercise.value=Math.round((((eval( document.forms["cal"].exercisepoints.value)/(eval( document.forms["cal"].mins.value))+.000000001))));
+}
+function clearForm(form) {
+	form.mins.value = "";
+	form.exercisepoints.value = "";
+form.weight.value = "";
+	exercise = "";
+	i2 = 0;
+}
+            </script>
+
+</font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+            <form method="GET" name="cal">
+              <div align="left">
+              <table cellpadding="0" cellspacing="0" border="0" width="306" height="1" style="border-collapse: collapse" bordercolor="#111111" align="left">
+                <tr> 
+                  <td align="center" width="298" height="1" valign="top"> 
+                  <p style="margin-top: 0; margin-bottom: 0">
+&nbsp;</p>
+                  <p style="margin-top: 0; margin-bottom: 0" align="left"> 
+                  <font face="Verdana, Tahoma, Arial" size="2">
+                    &nbsp;
+</font></font><font face="Verdana, Tahoma, Arial" size="2">
+
+                  <p style="margin-top: 0; margin-bottom: 0" align="left"> 
+                  &nbsp; 
+                  <p style="margin-top: 0; margin-bottom: 0" align="left"> 
+                  &nbsp;</font><p style="margin-top: 0; margin-bottom: 0" align="left"> 
+                  &nbsp;&nbsp; 
+                  <font face="Verdana, Tahoma, Arial" size="2">
+                    <select name="Exercise" size="1" tabindex="3" style="border: 0px solid #FF9933">
+                      <option value="WashingDishes">Bulaşık yıkamak </option>
+                      <option value="Housecleaning">Ev temizlemek </option>
+                      <option value="Aerobics">Aerobik </option>
+                      <option value="WalkStroller">Alışveriş sepetiyle yürüyüş </option>
+                      <option value="WashingCar">Araba yıkamak </option>
+                      <option value="Horseback">Ata binmek </option>
+                      <option value="Badminton">Badminton oynamak</option>
+                      <option value="Gardening">Bahçede çalışmak </option>
+                      <option value="Grocery">Bakkaldan alışveriş </option>
+                      <option value="Ballet">Bale </option>
+                      <option value="BallroomDance">Ballroom dancing </option>
+                      <option value="Basketball">Basketbol </option>
+                      <option value="Bisiklet">Bisiklet </option>
+                      <option value="WorkingOut">Body çalışmak </option>
+                      <option value="IceHockey">Buz hokeyi </option>
+                      <option value="IceSkate">Buz pateni </option>
+                      <option value="CCSki">kayak yapmak </option>
+                      <option value="Stacking">Çalı çırpı toplamak </option>
+                      <option value="Mowing">Çim biçmek </option>
+                      <option value="Ascending">Dağcılık (iniş) </option>
+                      <option value="Repelling">Dağcılık (çıkış) </option>
+                      <option value="Dancing">Dans etmek </option>
+                      <option value="SwingDancing">Dans (swing) </option>
+                      <option value="BrushingTeeth">Diş fırçalama </option>
+                      <option value="Painting">Evi boyamak </option>
+                      <option value="Frisbee">Frisbee oynamak</option>
+                      <option value="Kicking">Futbol </option>
+                      <option value="Golf">Golf </option>
+                      <option value="WeightLifting">Halter kaldırmak</option>
+                      <option value="Handball">Hentbol oynamak </option>
+                      <option value="RopeJumping">İp atlamak </option>
+                      <option value="Cards">İskambil oynamak </option>
+                      <option value="Jogging">Jogging </option>
+                      <option value="Canoeing">Kano/Kayaking </option>
+                      <option value="Karate">Karate </option>
+                      <option value="Shoveling">Kar küremek </option>
+                      <option value="DownhillSki">Kayak (Yamaç) </option>
+                      <option value="Köpek dolaştırma">Köpek dolaştırma </option>
+                      <option value="Rowing">Kürek çekmek </option>
+                      <option value="Stairclimbing">Merdiven çıkmak </option>
+                      <option value="Furniture">Mobilyaları yerleştirmek </option>
+                      <option value="Hiking">Otostop çekmek </option>
+                      <option value="Kissing">Öpüşmek </option>
+                      <option value="RollerBlade">Paten yapmak </option>
+                      <option value="BeachVolleyball">Plajda voleybol oynamak</option>
+                      <option value="PingPong">Pin-Pon oynamak </option>
+                      <option value="Piano">Piyano çalmak</option>
+                      <option value="Racquetball">Racquetball </option>
+                      <option value="Raking">Raking </option>
+                      <option value="Rugby">Rugby oynamak </option>
+                      <option value="Surfing">Sörf yapmak </option>
+                      <option value="WaterAerobics">Suda Aerobic yapmak </option>
+                      <option value="WaterSkiing">Su kayağı yapmak </option>
+                      <option value="WaterPolo">Su topu oynamak </option>
+                      <option value="Ironing">Ütü yapmak </option>
+                      <option value="TaeKwonDo">Tae Kwon Do </option>
+                      <option value="Tennis">Tenis (tekler) </option>
+                      <option value="Tennisdoubles">Tenis (çiftler) </option>
+                      <option value="WatchingTV">TV seyretmek </option>
+                      <option value="Volleyball">Voleybol oynamak </option>
+                      <option value="Yoga">Yoga yapmak </option>
+                      <option value="Swimming">Yüzmek </option>
+                    </select>
+</font><p style="margin-top: 0; margin-bottom: 0" align="left"> 
+                  &nbsp;<font face="Verdana, Arial, Helvetica, sans-serif" size="2"></td>
+                </tr>
+                <font face="Verdana" size="2">
+
+                <tr> 
+                  <td width="292" height="47" valign="top">
+                <font size="1">
+                  <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+                  <font face="Verdana" size="1">
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </font>
+                <font face="Verdana, Tahoma, Arial" size="2">
+                <font size="2">
+                  <font face="Verdana" size="1">
+
+                    <input TYPE="TEXT" NAME="mins" SIZE="5"></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1""> 
+                    dk</font></p>
+                  <font face="Verdana" size="2">
+
+                  <p style="margin-top: 0; margin-bottom: 0"><font size="1""> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>
+                  </font>
+</font>
+                <font face="Verdana, Tahoma, Arial" size="2">
+                  <font face="Verdana" size="1">
+
+                    <input TYPE="TEXT" NAME="weight" SIZE="5"></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1""> 
+                    kg</font><font size="2"></td>
+                </tr>
+                <tr> 
+                  <td width="292" height="47" valign="top">
+                  <p style="margin-top: 10">
+                <font face="Verdana, Tahoma, Arial" size="2">
+                  <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="image" src="image/temizle.gif" onclick="document.cal.reset();" width="100" height="23" name="I2" align="middle"></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </font><a href="#" onclick="computeForm(cal);"><font color="#FFFFFF">
+                  <img align="middle" src="image/hesap.gif" border="0" width="100" height="23"></font></a></font></font></td>
+                </tr>
+                <tr> 
+                  <td width="292" height="1">
+                  <p align="right" style="margin-top: 8">
+                  <font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;&nbsp; <input type="TEXT" name="exercisepoints" size="20"> 
+                  cal</font><p align="center" style="margin-top: 0">
+                <font face="Verdana, Tahoma, Arial" size="2">
+                  <br>
+</font>
+</font>
+                <font face="Verdana, Tahoma, Arial" size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                Copyright © Last Point</font><p align="center" style="margin-top: 0">
+                &nbsp;</td>
+                </tr>
+                </table>                     
+              </div>
+           </form>
+</font></td>
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>
